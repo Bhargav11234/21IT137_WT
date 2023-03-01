@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="javascript:display('bike')">bike</a>
+    <table id="myTable"></table>
+    <p id="myTable"></p>
+    <script src="./js/demo.js"></script>
+        
+</body>
+</html>
+
+//js file..................................................
+ const bike={
+        bikename:"Ninja",
+        price:12300,
+        company:"patel",
+    }
+    let car={
+        carname:"BMW",
+        price:1300000,
+        company:"Rokad",
+    }
+
+    const eledisplay=document.getElementById("myTable");
+
+    function display(obj)
+    {
+
+       // alert(obj);
+
+     const tableEle=document.createElement("table");
+     const tableEleTR1=document.createElement("tr");
+
+     const tableEleTd1=document.createElement("td");
+     const tableEleTd2=document.createElement("td");
+     if(obj=="bike")
+     {
+        //alert(bike.bikename)
+        tableEleTd1.textContent=bike.bikename;
+        tableEleTd2.textContent=bike.price;
+     }
+     tableEleTR1.appendChild(tableEleTd1);
+     tableEleTR1.appendChild(tableEleTd2);
+     tableEle.appendChild(tableEleTR1);
+    document.getElementById("myTable").appendChild(tableEle);
+    return false;    
+}
