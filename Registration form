@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>REGISTARTION FORM</title> 
+</head> 
+<body bgcolor="Lightblue"> 
+<form method="post" action=""> 
+<b>Enter Your Full Name</b> 
+<br> 
+<input type="text" name="" placeholder="Full Name" id=""> 
+<br> 
+<b>Enter Your College ID</b> 
+<br> 
+<input type="text" name="" placeholder="e.g. 21IT137" id=""> 
+<br> 
+<b>Enter Your Gender</b> 
+<br> 
+<input type="radio" name="gender" value="male"> Male 
+<br> 
+<input type="radio" name="gender value="female"> Female 
+<br> 
+<b>Enter Your Current Semester</b> 
+<br> 
+<input type="radio" name="sem" id=""> 2 
+<br> 
+<input type="radio" name="sem" id=""> 4 
+<br> 
+<input type="radio" name="sem" id=""> 6 
+<br> 
+<input type="radio" name="sem" id=""> 8 
+<br> 
+<b>Enter Your Charusat Email ID</b> 
+<br> 
+<input type="email" name="" placeholder="Email ID" id=""> 
+<br> 
+<b>Choose interested events</b> 
+<br> 
+<input type="checkbox" name="events" value="" id="">Kabaddi 
+<br> 
+<input type="checkbox" name="events" value="" id="">Cricket 
+<br> 
+<input type="checkbox" name="events" value="" id="">VolleyBall 
+<br> 
+<input type="checkbox" name="events" value="" id="">BasketBall 
+<br> 
+<input type="checkbox" name="events" value="" id="">Badminton 
+<br> 
+<b>Travelling From</b> 
+<br> 
+<input type="radio" name="tra" id=""> Hostel 
+<br> 
+<input type="radio" name="tra" id=""> Private Vechicle 
+<br> 
+<input type="radio" name="tra" id=""> Public Transportaion 
+<br> 
+<input type="radio" name="tra" id=""> Charusat Transportaion 
+<br> 
+<hr> 
+<input type="submit" value="Submit"> 
+<br> 
+<a href="./index.html">Go back to home</a> 
+</form> 
+</body> 
+</html>
