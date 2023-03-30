@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<head> 
+<tittle> Document </tittle> 
+</head> 
+<html>
+<script>
+ const Shoes = {size: '9',brand: 'Puma',name: 'nike', colour: 'Yellow',price: 
+'4999.00' }
+ myVehicle(Shoes);
+ function myVehicle({brand,name,color,size,price})
+ { 
+ const print = 'I have ' + brand + ' ' + name + ' of ' + color + ' colour, Size is ' + 
+size + ' So Final Price is : ' + price + '.'; console.log(print); 
+ } 
+</script> 
+</body> 
+</html>
