@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Functions</title>
+</head>
+<body>
+<h1>Functions</h1>
+<p id="output"></p>
+<script>
+// forEach()
+const numbers = [1, 2, 3, 4];
+numbers.forEach((number) => console.log(number));
+const output = document.getElementById("output");
+numbers.forEach((number) => output.innerHTML += number + "<br>");
+// map()
+const doubled = numbers.map((number) => number * 2);
+console.log(doubled);
+// find()
+const found = numbers.find((number) => number > 2);
+console.log(found);
+// filter()
+const filtered = numbers.filter((number) => number % 2 === 0);
+console.log(filtered);
+// forEach() vs map()
+const square = (number) => number ** 2;
+const squaredForEach = numbers.forEach(square);
+console.log(squaredForEach);
+const squaredMap = numbers.map(square);
+console.log(squaredMap);
+// Use Cases of Reduce()
+const sum = numbers.reduce((accumulator, currentValue) => accumulator +
+currentValue, 0);
+console.log(sum);
+const product = numbers.reduce((accumulator, currentValue) => accumulator *
+currentValue, 1);
+console.log(product);
+// call(), apply(), bind()
+const person = {
+name: "John",
+age: 30,
+getDetails: function() {
+return this.name + " is " + this.age + " years old.";
+}
+}
+const details1 = person.getDetails();
+console.log(details1);
+const details2 = person.getDetails.call({name: "Jane", age: 25});
+console.log(details2);
+const details3 = person.getDetails.apply({name: "Bob", age: 40});
+console.log(details3);
+const getBobDetails = person.getDetails.bind({name: "Bob", age: 40});
+const details4 = getBobDetails();
+console.log(details4);
+</script>
+</body>
+</html>
